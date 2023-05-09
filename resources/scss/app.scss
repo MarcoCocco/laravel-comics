@@ -19,21 +19,37 @@ nav {
             }
         }
 
-        .links ul {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
+        .links {
+            margin-bottom: -16px;
 
-            li {
-                text-transform: uppercase;
-                font-size: .8em;
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
 
-                &:hover {
-                    cursor: pointer;
-                    color: #0282f9;
+                li {
+                    list-style-type: none;
+                    text-transform: uppercase;
+                    font-size: .8em;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #0282f9;
+                    }
                 }
+            }
+        }
+
+        .search-bar {
+
+            input {
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #0282f9;
             }
         }
     }
 
 }
+/* /navbar */
+
