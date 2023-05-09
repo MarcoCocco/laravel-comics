@@ -5,8 +5,26 @@
     </div>
 @endsection
 
-@section('merchLinks')
+@section('mainContent')
     <main>
+        <div class="cards-container container">
+            @foreach ($comics as $comic)
+                <div id="card">
+                    <img src="{{ $comic['thumb'] }}" alt="">
+                    <div id="series">
+                        <p>{{ $comic['series'] }}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <div id="load-button">
+            <button>LOAD MORE</button>
+        </div>
+    </main>
+@endsection
+
+@section('merchLinks')
+    <div class='merchandise'>
         <div class="main-container container">
             <div class="main-links">
                 <ul>
@@ -16,5 +34,5 @@
                 </ul>
             </div>
         </div>
-    </main>
+    </div>
 @endsection
