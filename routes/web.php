@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
+    $index = request()->index;
 
     $navLinks = [
         'characters',
@@ -109,11 +110,12 @@ Route::get('/', function () {
     );
 
 
-    return view('home', compact('comics', 'navLinks', 'footerColumns', 'socials', 'mainLinks'));
-});
+    return view('home', compact('comics', 'navLinks', 'footerColumns', 'socials', 'mainLinks', 'index'));
+})->name('home');
 
 Route::get('/details', function () {
     $comics = config('comics');
+    $index = request()->index;
 
     $navLinks = [
         'characters',
@@ -208,5 +210,5 @@ Route::get('/details', function () {
     );
 
 
-    return view('details', compact('comics', 'navLinks', 'footerColumns', 'socials', 'mainLinks'));
-});
+    return view('details', compact('comics', 'navLinks', 'footerColumns', 'socials', 'mainLinks', 'index'));
+})->name('details');

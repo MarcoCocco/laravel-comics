@@ -19,9 +19,9 @@
 
 @include('partials/navbar')
 @yield('jumbo')
-<div class="container">
-    @yield('detailsContent')
-</div>
+
+@yield('detailsContent')
+
 @yield('mainContent')
 @yield('merchLinks')
 

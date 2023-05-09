@@ -12,8 +12,7 @@
                 <div id="card">
                     <img src="{{ $comic['thumb'] }}" alt="">
                     <div id="series">
-                        <p>{{ $comic['series'] }}</p>
-                        <a href="/details">Details</a>
+                        <a href="{{ route('details') }}?index={{ $loop->index }}"><p>{{ $comic['series'] }}</p></a>
                     </div>
                 </div>
             @endforeach
