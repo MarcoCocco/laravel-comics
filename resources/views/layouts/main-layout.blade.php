@@ -19,7 +19,7 @@
 
 @include('partials/navbar')
 
-
+@yield('jumbo')
 
 @include('partials/footer')
 
