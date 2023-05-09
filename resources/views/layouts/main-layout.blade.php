@@ -21,6 +21,8 @@
 
 @yield('jumbo')
 
+@yield('merchLinks')
+
 @include('partials/footer')
 
 </body>

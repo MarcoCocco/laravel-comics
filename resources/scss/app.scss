@@ -136,3 +136,39 @@ footer {
 
     }
 }
+
+/* /footer */
+
+main {
+    background-color: #0282f9;
+
+    .main-container {
+
+        .main-links {
+
+            ul {
+                margin-bottom: 0px;
+                padding: 40px 0;
+                display: flex;
+                justify-content: space-around;
+                gap: 40px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        height: 50px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -85,5 +85,29 @@ Route::get('/', function () {
         'resources/img/footer-periscope.png',
     ];
 
-    return view('home', compact('comics', 'navLinks', 'footerColumns', 'socials'));
+    $mainLinks = array(
+        array(
+            'image' => 'resources/img/buy-comics-digital-comics.png',
+            'name' => 'DIGITAL COMICS',
+        ),
+        array(
+            'image' => 'resources/img/buy-comics-merchandise.png',
+            'name' => 'DC MERCHANDISE',
+        ),
+        array(
+            'image' => 'resources/img/buy-comics-subscriptions.png',
+            'name' => 'SUBSCRIPTION',
+        ),
+        array(
+            'image' => 'resources/img/buy-comics-shop-locator.png',
+            'name' => 'COMIC SHOPO LOCATOR',
+        ),
+        array(
+            'image' => 'resources/img/buy-dc-power-visa.svg',
+            'name' => 'DC POWER VISA',
+        )
+    );
+
+
+    return view('home', compact('comics', 'navLinks', 'footerColumns', 'socials', 'mainLinks'));
 });
