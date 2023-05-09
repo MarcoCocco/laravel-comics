@@ -13,9 +13,11 @@
                     <img src="{{ $comic['thumb'] }}" alt="">
                     <div id="series">
                         <p>{{ $comic['series'] }}</p>
+                        <a href="/details">Details</a>
                     </div>
                 </div>
             @endforeach
+            
         </div>
         <div id="load-button">
             <button>LOAD MORE</button>

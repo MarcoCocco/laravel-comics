@@ -18,8 +18,10 @@
 <body>
 
 @include('partials/navbar')
-
 @yield('jumbo')
+<div class="container">
+    @yield('detailsContent')
+</div>
 @yield('mainContent')
 @yield('merchLinks')
 
